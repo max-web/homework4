@@ -1,0 +1,290 @@
+
+
+
+/*Ñ‚ÐµÑÑ‚ ÐºÐ¸Ñ€Ð¸Ð»Ð»Ð¸Ñ†Ñ‹*/
+
+
+/*************************************************
+Global Styles
+*************************************************/
+
+*{
+	box-sizing:border-box;
+}
+
+
+/*clearfix*/
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+
+body{
+	background-color: #1091B1;
+	font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+
+	background-image: url(../img/bg_body.png);
+	background-repeat: repeat-x;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 1000px;
+	background-color: #fff;
+
+	box-shadow: 0 0px 7px 1px rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+
+
+
+/*************************************************
+Header
+*************************************************/
+
+.top-container{
+	position: relative;
+	height: 175px;
+}
+
+
+/*logo*/
+	.header .logo{
+		position: absolute;
+		left: 28px;
+		bottom: -1px;		
+		text-align: center;
+		text-decoration: none;
+	}
+	.header .logo .text{
+		position: absolute;
+		bottom:53px;
+		color: #128aa7;
+		font-size: 12px;
+		
+		/*Ñ†ÐµÐ½Ñ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ‚ÐµÐºÑÑ‚Ð°*/
+		width: 283px;
+		text-align: center;
+	}
+
+/*ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹*/
+	.header .contacts{
+		position: absolute;
+		right: 30px;
+		top: 11px;
+		font-size: 12px;
+		line-height: 17px;
+		color: #128aa7;
+	}
+
+	.header .contacts a{
+		display: block;
+		color: #128aa7;
+		text-decoration: none;
+	}
+
+	.header .contacts .head{
+		font-weight: bold;
+	}
+
+
+/*menu with counties*/
+	.menuTop{
+	position: absolute;
+	right: 19px;
+	bottom: 8px;
+	}
+
+	.menuTop-item{
+		float: right;
+		text-align: center;
+		margin-right: 13px;
+	}
+
+	.menuTop-link{
+		color: #51A9BE;
+		font-size: 10px;
+	}
+
+
+/*big photo in header*/
+	.promo-photo{
+		border-top: 1px solid #128aa7;
+		border-bottom: 1px solid #128aa7;
+	}
+
+
+
+
+
+
+
+/*************************************************
+Header - multilevel menu
+*************************************************/
+
+
+.menu{
+	background-color: #343434;
+
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #000000;
+	text-align: center;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
+	font-size: 14px;
+
+	/*fix shadow bug with next div*/
+	position: relative;
+	z-index: 1;
+
+	/*question for mentor*/
+	bottom: 2px;
+}
+
+
+.menu-item{
+	display: inline-block;
+	padding: 0px 34px;
+	position: relative;
+}
+
+
+.menu-link{
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	height: 29px;
+	line-height: 29px;
+}
+
+
+
+.submenu{
+	display: none;
+
+	position: absolute;
+	top:30px;
+	left:25px;
+	width: 100%;
+
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+	background-color: #303030;
+}
+
+.submenu-item{
+	z-index: 10;
+}
+
+.submenu-link{
+	display: block;
+	text-align: left;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-top:6px;
+	padding-bottom: 6px;
+}
+
+.submenu-link:hover{
+	text-decoration: underline;
+}
+
+.menu-item:hover .submenu{
+	display: block;
+}
+
+/*podognal mejstrochniy interval pod maket*/
+.submenu-item:first-child .submenu-link{
+	padding-top: 12px;
+}
+.submenu-item:last-child .submenu-link{
+	padding-bottom: 12px;
+}
+
+
+/*triangle in menu*/
+.parent-submenu:after{
+	content:'\25BE';
+	color: white;
+	position: absolute;
+	right: 20px;
+	top:7px;
+}
+
+
+
+
+
+
+
+
+
+/*************************************************
+Content
+*************************************************/
+
+.content {
+    color: #424c43;
+    line-height: 24px;
+    background-image: url("../img/bg_content.jpg");
+    background-repeat: repeat-y;
+    border-bottom: 3px solid #031d28;
+}
+
+.content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.left-column {
+    float: left;
+    width: 210px;
+    padding: 15px;
+}
+
+.center-column {
+    float: left;
+    width: 580px;
+    padding: 15px;
+}
+
+.right-column {
+    float: left;
+    width: 210px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+Footer
+*************************************************/
+
+.footer{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+
+	font-size: 12px;
+	color: white;
+	background-color: #1091B1;
+}
