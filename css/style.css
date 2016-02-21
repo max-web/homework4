@@ -173,12 +173,13 @@ Header - multilevel menu
 	display: none;
 
 	position: absolute;
-	top:30px;
+	top:29px;
 	left:25px;
 	width: 100%;
 
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
 	background-color: #303030;
+	border-top: 1px solid beige;
 }
 
 .submenu-item{
